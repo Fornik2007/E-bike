@@ -7,30 +7,33 @@
 }
 
 .container {
-  max-width: 90%;
+  max-width: 100%; /*modifique el ancho*/
   margin: auto;
 }
 
 .scontainer {
-  max-width: 80%;
+  max-width: 95%;
   margin: auto;
 }
 
 .flex {
   display: flex;
+  flex-wrap: wrap; /* hace que el contenido se ajuste en una nueva fila si hace falta - fornik */
 }
 
 .flex1 {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap; /* Permite reubicar elementos en pantallas pequeñas - fornik */
+
 }
 
 .tita{
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .tita2{
-  font-size: 80px;
+  font-size: 60px;
   color: black;
   }
 
@@ -50,12 +53,13 @@
   }
   
   .heading button {
-    padding: 15px 80px;
+    padding: 15px 50px; /* ajuste el segundo valor*/
     font-weight: bold;
     position: absolute;
     top: 0;
-    left: 42%;
+    left: 35%; /*reduje el ajuste - fornik*/
     font-size: 15px;
+    transform: translateX(-50%); /*este es un ajuste para centrar bien los botones*/
   }
   
   .heading .lines {
@@ -93,8 +97,8 @@
   
   .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adaptación automática a cualquier pantalla */
+    grid-gap: 20px;
   }
   
   .latest .scontainer {
@@ -145,11 +149,12 @@
     font-weight: 400;
     color: #37B234;
     margin: 20px 0 20px 0;
+    font-size: 18px;
   }
   
   .latest .detalis h2 span {
     text-decoration: line-through;
-    font-size: 14px;
+    font-size: 12px;
     color: grey;
   }
   
@@ -181,7 +186,7 @@ ul {
 }
 
 .slider h1 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 400;
   margin: 20px 0 20px 0;
 }
@@ -194,7 +199,7 @@ ul {
 }
 
 .slider h2 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   margin: 40px 0 30px 0;
 }
@@ -204,7 +209,7 @@ ul {
   position: absolute;
   top: 35%;
   cursor: pointer;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .owl-nav .owl-prev i {
@@ -363,7 +368,7 @@ footer .social_media i {
 }
 
 /*----------footer--------*/
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 1024px) { /* Ajustes para la responsiva general - fornik*/
 
   /*----------home--------*/
   .home .content {
@@ -384,14 +389,16 @@ footer .social_media i {
   }
 
   .ani_image img {
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Ajustar al ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    max-width: 450px; /* Limitar el tamaño máximo de la imagen */
+  
   }
 
   /*----------home--------*/
   /*----------latest--------*/
   .heading button {
-    left: 30%;
+    left: 40%; /*aqui ajuste - fornik*/
   }
 
   .heading .line {
@@ -407,7 +414,7 @@ footer .social_media i {
   }
 
   .latest .box {
-    padding: 10px;
+    padding: 20px;
   }
 
   /*----------latest--------*/
@@ -444,6 +451,13 @@ footer .social_media i {
     left: 20%;
   }
 
+  .ani_image img {
+    width: 100%; /* Ajustar al ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    max-width: 450px; /* Limitar el tamaño máximo de la imagen */
+  
+  }
+
   footer .scontainer,
   .latest .scontainer {
     padding: 0;
@@ -451,5 +465,86 @@ footer .social_media i {
 
   .shipping {
     padding: 50px 0 50px 0;
+  }
+}
+
+/* ajustes para celulares . fornik */
+@media only screen and (max-width: 600px) {
+  .heading h1 {
+    font-size: 30px;
+  }
+
+  .heading button {
+    left: 50%; 
+    transform: translateX(-50%);
+    padding: 10px 40px; 
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr); /* Eb celulares ya nomas va estar distribuido en una sola columna */
+  }
+
+  .tita {
+    font-size: 28px; 
+  }
+
+  .tita2 {
+    font-size: 45px; 
+  }
+
+  .latest .box {
+    padding: 15px; 
+  }
+
+  .ani_image img {
+    width: 100%; /* Ajustar al ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    max-width: 450px; /* Limitar el tamaño máximo de la imagen */
+
+  }
+
+  /* Slider */
+  .slider h1 {
+    font-size: 35px; 
+  }
+
+  .slider h2 {
+    font-size: 22px; 
+  }
+
+  /* Footer */
+  footer .scontainer {
+    padding: 50px 20px; 
+  }
+
+  footer h1, footer h3 {
+    font-size: 25px; 
+  }
+
+  footer li, footer p {
+    font-size: 14px; 
+  }
+}
+
+/* Nuevas reglas para pantallas ultra pequeñas (menos de 400px) - chat gpt( la ruca de nacho jijijija) */
+@media only screen and (max-width: 400px) {
+  .heading h1 {
+    font-size: 24px; /* Reducción máxima para pantallas muy pequeñas */
+  }
+
+  .slider h1 {
+    font-size: 28px; /* Ajuste final en móviles muy pequeños */
+  }
+
+  .slider h2 {
+    font-size: 20px; /* Ajuste en móviles pequeños */
+  }
+
+  .latest .box {
+    padding: 10px; /* Reducción de padding en móviles pequeños */
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Un solo elemento por fila */
   }
 }

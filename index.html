@@ -4,9 +4,32 @@
 <head>
   <title>E-Bike</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="js/index.js">
+
+
+  <!--  google fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Outline&family=Comfortaa:wght@300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Outline&family=Comfortaa:wght@300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Outline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Outline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Outline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
   <!--  animejs -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
@@ -25,176 +48,155 @@
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <!--  jquery -->
 
+
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+   <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+
 </head>
 
+
 <body>
+  <header class="eco">
+    <a href="index.html">
+    <img src="image/eco-tronic.jpg" alt="" ></a>
+  </header>
 
-  <script type="text/javascript">
-    var mainListDiv = document.getElementById("mainListDiv");
-    mediaButton = document.getElementById('mediaButton');
-
-    mediaButton.onclick = function () {
-      mainListDiv.classList.toggle('show_list');
-      mediaButton.classList.toggle('active');
-    }
-  </script>
-
-  <section class="wrapper top">
+  <section class="wrapper">
     <div class="scontainer">
+
       <div class="text">
-        <p class="tita">E-bike activa</p>
-        <p class="tita2">Buenos dias esta es su E-BIKE</p>
+        <h1 class="k">Bienvenido a E-BIKE</h1>
+        <p class="k" >SOSTENIBILIDAD SOBRE RUEDAS,</p>
+        <p class="k">ENERGÍA QUE AVANZA</p>
       </div>
-      <div class="ani_image">
-        <img src="image/bike3.png" alt="">
-      </div>
+
+    </div>
+
+    
+    <div class="start">
+      <a href="login.html" style="text-decoration: none;">
+        <button class="button" >
+          <span class="button__icon-wrapper">
+            <svg
+              viewBox="0 0 14 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="button__icon-svg"
+              width="10"
+            >
+              <path
+                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                fill="currentColor"
+              ></path>
+            </svg>
+        
+            <svg
+              viewBox="0 0 14 15"
+              fill="none"
+              width="10"
+              xmlns="http://www.w3.org/2000/svg"
+              class="button__icon-svg button__icon-svg--copy"
+            >
+              <path
+                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </span>
+          Haz click para empezar
+        </button>
+      </a>
     </div>
   </section>
-
-
 
   <section class="latest Assesories top">
-    <div class="scontainer">
-      <div class="heading">
-        <h1>Informacion sobre su bicicleta</h1>
-        <div class="lines flex1">
-          <div class="line"> <i class="fas fa-circle"></i> </div>
-          <div class="line line2"> <i class="fas fa-circle"></i> </div>
-        </div>
-      </div>
-
-      <div class="content grid top">
-        <div class="box">
-          <div class="img">
-            <img src="image/bateria.png" alt="">
-            <div class="flex1">
+        <div class="S1">
+              <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            <div class="t">
+              <div class="K1">
+                <h1 >Avance hacia una movilidad más ecológica</h1>
+              </div> 
+              <div class="K2">
+                <h5>Nos enfocamos en promover el uso de bicicletas eléctricas, con la capacidad única de recargar la batería mediante energías limpias.
+                  Lo aplicamos mediante el desarrollo de bicicletas eléctricas, siendo la clave para impulsar un cambio positivo hacia ciudades más limpias y un transporte más eficiente, de igual manera fomentando un estilo de vida más saludable. </h5>
+              </div>
             </div>
-          </div>
+        </div>   
+    </section>
+  
 
-          <div class="detalis">
-            <h3>Bateria</h3>
-            <h2>0%</h2>
-            <button>Actualizar</button>
-          </div>
+    <section class="shipping">
+      
+        <div class="solecito">
+          <img src="image/e2.jpg">   
         </div>
 
-
-        <div class="box">
-          <div class="img">
-            <img src="image/kilo.png" alt="">
-            <div class="flex1">
-            </div>
-          </div>
-
-          <div class="detalis">
-            <h3>Kilometraje</h3>
-            <h2>0km</h2>
-            <button>Actuzalizar</button>
-          </div>
+        <div class="scontainer a">    
+            <h3>Amigables con el ambiente</h3>
+            <p>Recargables con energía solar y mecánica</p>
         </div>
 
+    </section>
 
-        <div class="box">
-          <div class="img">
-            <img src="image/histo.png" alt="">
-            <div class="flex1">
-            </div>
-          </div>
+    <footer>
+      <div class="servicio">
+        <h2>servicio al cliente</h2>
+        <form action="#" method="post" class="formulario">
 
-          <div class="detalis">
-            <h3>Historial</h3>
-            <button>Mostrar</button>
-          </div>
-        </div>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" placeholder="Escriba su nombre" required>
 
-        <!--aqui para agregar mas-->
-  </section>
+          <label for="email">Correo:</label>
+          <input type="email" id="email" name="email" placeholder="Escriba su correo" required>
 
+          <label for="issue-type">Tipo de Problema:</label>
+          <select id="issue-type" name="issue-type" required>
+            <option value="">Selecciona una opción</option>
+            <option value="product-failure">Falla del Producto</option>
+            <option value="system-failure">Falla del Sistema</option>
+            <option value="lost-product">Extravío del Producto</option>
+          </select>
 
+          <label for="details">Detalles del Problema:</label>
+          <textarea id="details" name="details" rows="4" placeholder="Describa su problema a detalle" required></textarea>
 
-  <section class="shipping">
-    <div class="scontainer grid">
-      <div class="box flex">
-        <div class="img">
-          <i class="fas fa-shipping-fast"></i>
-        </div>
-        <div class="text">
-          <h3>SOSTENIBILIDAD SOBRE RUEDAS, ENERGÍA QUE AVANZA</h3>
-        </div>
-      </div>
-      <div class="box flex">
-        <div class="img">
-          <i class='far fa-hourglass'></i>
-        </div>
-        <div class="text">
-          <h3>Amigables con el ambiente</h3>
-          <p>Recargables con energia solar y cinetica</p>
-        </div>
-      </div>
-      <div class="box flex">
-        <div class="img">
-          <i class="fas fa-shield-alt"></i>
-        </div>
-        <div class="text">
-          <h3>Accesible y facil de usar</h3>
-          <p>Es como utilizar una bicicleta normal</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <footer>
-    <div class="scontainer grid">
-      <div class="box">
-        <div class="logo">
-          <img src="image/ebike.jpg" alt="">
-        </div>
-        <p> Nuestro objetivo es transformar la forma en que nos desplazamos por la ciudad, con el fin de disminuir la
-          contaminación y congestión en las calles. Queremos fomentar el uso de bicicletas eléctricas que funcionan con
-          energías renovables</p>
+          <button type="submit">Enviar</button>
+        </form>
       </div>
 
-      <div class="box">
-        <h3>Servicios al cliente</h3>
-        <div class="flex1">
-          <ul>
-            <li>Ayuda</li>
-            <li>Contactanos</li>
-          </ul>
-          <ul>
-            <li>Mi cuenta</li>
-          </ul>
+      <div class="img-footer">
+        <img src="./image/eco-tronic_sinFondo.png" alt="eco-tronic">
+        <div class="redesSociales">
+          <h3>siguenos en: </h3> 
+          <img src="./image/facebook.png" alt="feisbuk">
+          <img src="./image/twitter.png" alt="twitter">
         </div>
       </div>
+    </footer>
 
-      <div class="box">
-        <h3>Estemos en contacto</h3>
-        <div class="input flex1">
-          <input type="email" placeholder="Email">
-          <i class="far fa-long-arrow-right"></i>
-        </div>
-        <div class="social_media">
-          <i class="fab  fa-facebook-f"></i>
-          <i class="fab  fa-instagram"></i>
-          <i class="fab  fa-twitter"></i>
-          <i class="fab  fa-youtube"></i>
-          <i class="fab  fa-google"></i>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-
-  <script>
-    anime({
-      targets: '.ani_image',
-      translateX: 70,
-      loop: true,
-      direction: 'alternate',
-      easing: 'easeInOutSine'
-    });
-  </script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
